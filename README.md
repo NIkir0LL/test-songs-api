@@ -31,6 +31,4 @@ Here are the possibilities of the project:
     
 [GIN-debug] GET    /swagger/*any
  ```
-link to the testing of this application
-
-`http://localhost:8080/swagger/index.html#/`
+in order to test this implementation, you need to run the `go run main.go` command and follow the link `http://localhost:8080/swagger/index.html #/`
