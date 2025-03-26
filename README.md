@@ -16,21 +16,21 @@ The API is developed using Gin and provides convenient endpoints for working wit
 
 Here are the possibilities of the project:
 
-`
-[GIN-debug] GET    /songs     
+```
+[GIN-debug] GET    /songs
 
-[GIN-debug] POST   /songs     
+[GIN-debug] POST   /songs
 
-[GIN-debug] GET    /songs/:id       
-
-[GIN-debug] PUT    /songs/:id       
-
-[GIN-debug] DELETE /songs/:id      
-
-[GIN-debug] GET    /info            
-
+[GIN-debug] GET    /songs/:id
+   
+[GIN-debug] PUT    /songs/:id
+   
+[GIN-debug] DELETE /songs/:id
+  
+[GIN-debug] GET    /info
+    
 [GIN-debug] GET    /swagger/*any
- `
+ ```
 link to the testing of this application
 
 `http://localhost:8080/swagger/index.html#/`
