@@ -94,29 +94,33 @@ paths:
             '500':
                description: Internal server error
 components:
-schemas:
-SongDetail:
-required:
-- releaseDate
-- text
-- link
-type: object
-properties:
-releaseDate:
-type: string
-example: 16.07.2006
-text:
-type: string
-example: Ooh baby, don't you know I suffer?\nOoh baby, can
+   schemas:
+      SongDetail:
+         required:
+            - releaseDate
+            - text
+            - link
+         type: object
+         properties:
+            releaseDate:
+               type: string
+               example: 16.07.2006
+            text:
+               type: string
+               example: Ooh baby, don't you know I suffer?\nOoh baby, can
 you hear me moan?\nYou caught me under false pretenses\nHow long
 before you let me go?\n\nOoh\nYou set my soul alight\nOoh\nYou set
 my soul alight
-link:
-type: string
-example: https://www.youtube.com/watch?v=Xsp3_a-PMTw
+            link:
+               type: string
+               example: https://www.youtube.com/watch?v=Xsp3_a-PMTw
+```
 
 3. Put the enriched information in the postgres database (the database structure should
 be created by migrations at the start of the service)
+
 4. Cover the code with debug and info logs
+
 5. Export the configuration data to the .env file
+
 6. Generate a swagger for the implemented API
